@@ -31,8 +31,10 @@ devtools::install_github("andybeet/testingdsem")
 
 ## Results
 
-* See three figures below
-* Each figure shows the fitted network as found in the dsem [vignette](https://james-thorson-noaa.github.io/dsem/articles/vignette.html#comparison-with-dynamic-linear-models) alongside the same fitted network but with 25% of each of the variables data set as missing(NA). The NAs were randomly omitted
+* See figures below
+* Each figure shows a fitted network as found in the dsem [vignette](https://james-thorson-noaa.github.io/dsem/articles/vignette.html#comparison-with-dynamic-linear-models) 
+
+* The original model fit is show with 3 other fits where the only difference is that some data have been set to missing (NAs)
 
 * Each of the three figures show three random assignments of NAs. In each case 25% of the data was assigned missing.
 
@@ -44,7 +46,7 @@ devtools::install_github("andybeet/testingdsem")
 
 Fit from vignette
 
-```{r example, echo = F}
+```{r example, echo = T}
 library(testingdsem)
 plotid <- testJim()
 plotid$porig
@@ -53,7 +55,7 @@ plotid$porig
 
 
 Fits of same model with missing data
-```{r example2, echo =F}
+```{r example2, echo =T}
 plotid$p1
 plotid$p2
 plotid$p3

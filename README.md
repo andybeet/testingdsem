@@ -20,12 +20,13 @@ devtools::install_github("andybeet/testingdsem")
 
 ## Results
 
--   See three figures below
+-   See figures below
 
--   Each figure shows the fitted network as found in the dsem
+-   Each figure shows a fitted network as found in the dsem
     [vignette](https://james-thorson-noaa.github.io/dsem/articles/vignette.html#comparison-with-dynamic-linear-models)
-    alongside the same fitted network but with 25% of each of the
-    variables data set as missing(NA). The NAs were randomly omitted
+
+-   The original model fit is show with 3 other fits where the only
+    difference is that some data have been set to missing (NAs)
 
 -   Each of the three figures show three random assignments of NAs. In
     each case 25% of the data was assigned missing.
@@ -40,12 +41,34 @@ devtools::install_github("andybeet/testingdsem")
 
 Fit from vignette
 
-    #> 1 regions found.
-    #> Using 1 threads
-    #> 1 regions found.
-    #> Using 1 threads
+``` r
+library(testingdsem)
+plotid <- testJim()
+#> 1 regions found.
+#> Using 1 threads
+#> 1 regions found.
+#> Using 1 threads
+plotid$porig
+```
 
 <img src="man/figures/README-example-1.png" width="100%" />
 
 Fits of same model with missing data
-<img src="man/figures/README-example2-1.png" width="100%" /><img src="man/figures/README-example2-2.png" width="100%" /><img src="man/figures/README-example2-3.png" width="100%" />
+
+``` r
+plotid$p1
+```
+
+<img src="man/figures/README-example2-1.png" width="100%" />
+
+``` r
+plotid$p2
+```
+
+<img src="man/figures/README-example2-2.png" width="100%" />
+
+``` r
+plotid$p3
+```
+
+<img src="man/figures/README-example2-3.png" width="100%" />

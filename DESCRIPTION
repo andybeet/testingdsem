@@ -19,4 +19,5 @@ Imports:
     cowplot,
     AER,
     zoo
-
+URL: https://github.com/andybeet/testingdsem
+BugReports: https://github.com/andybeet/testingdsem/issues

@@ -16,7 +16,6 @@ Imports:
     ggplot2,
     reshape,
     phylopath,
-    cowplot,
     AER,
     zoo
 URL: https://github.com/andybeet/testingdsem

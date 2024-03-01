@@ -57,12 +57,12 @@ testJim <- function(){
 
 
   # comparison plot
-  p1 <- cowplot::plot_grid(poriginal,sampled1$plot)
-  p2 <- cowplot::plot_grid(poriginal,sampled2$plot)
-  p3 <- cowplot::plot_grid(poriginal,sampled3$plot)
+  p1 <- sampled1$plot
+  p2 <- sampled2$plot
+  p3 <- sampled3$plot
 
-  print(p1)
-  print(p2)
-  print(p3)
+
+
+  return(list(porig=poriginal,p1=p1,p2=p2,p3=p3))
 
 }

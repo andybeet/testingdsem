@@ -1,0 +1,16 @@
+---
+title: "notes"
+format: html
+editor: visual
+---
+
+## DSEM workshop (J. Thorson)
+
+Feb 27-28, 2024. Woods Hole. Asparov - Mplus comp, gsem STATA comp
+
+Simulation Studies:
+
+1.  Simulate a DSEM model with known parameter values, interaction terms, standard deviations
+2.  use Atlantis output. need to define conceptual model
+
+Forcing files ( phytoplankton) -\> zoo (ZM,ZL,ZS) -\> herring, mackerel -\> cod, haddock
